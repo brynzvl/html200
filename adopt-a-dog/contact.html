@@ -25,43 +25,64 @@
         </nav>
     </section>
     <main>
-      <h2>Checkout</h2>
-      <div class="form">
-          <form action="/action.php" method="GET">
-            <label>First Name <input type="text" name="first-name"></label><br>
-            <label>Email Address<input type="email" name="user-email"></label><br>
-            <label>Street Address<input type="address" name="address"></label><br>
-            <label>City<input type="city" name="city"></label>
-            <label>State<select name="State">
-              <option value="WA">Washington</option>
-              <option value="TN">Tennessee</option>
-            </select></label>
-            <label>Zip Code<input type="Zip Code" name="Zip Code"></label><br>
-            <label>First Time Adopter?<input type="radio" name="Yes" value="Yes">Yes
-            <input type="radio" name="No" value="No">No<br></label>
-            <label>Pickup Location<select name="Pickup Location">
-              <option value="Queen Anne">Queen Anne</option>
-              <option value="Ballard">Ballard</option>
-            </select></label>
-            <div>
-              <p>Dogs Adopted</p>
-            <div class="dogs-adopted">
-              <img src="images/tucker-good-589776-unsplash.jpg" alt="Lucas the dog looking up with is mouth open" width=48>
-              <div>Lucas</div>
-              <div>Cost to Adopt:$123.45</div>
-            </div>
-            <div class="dogs-adopted">
-              <img src="images/duffy-brook-350225-unsplash.jpg" alt="Duffy the Dog relaxing outside" width=48>
-              <div>Duffy</div>
-              <div>Cost to Adopt:$123.45</div>
-            </div>
-            <div class="Total">
-              <p>Total Adoption Cost</p>
-              <div>$1234.56</div>
-            </div>
-            </div>
-              <input type="submit" value="Submit" id="submit">
-          </form>
+        <h2>Checkout</h2>
+        <div class="form">
+            <form action="/action.php" method="GET">
+                <label>First Name
+                    <input type="text" name="first-name">
+                </label>
+                <br>
+                <label>Email Address
+                    <input type="email" name="user-email">
+                </label>
+                <br>
+                <label>Street Address
+                    <input type="text" name="address">
+                </label>
+                <br>
+                <label>City
+                    <input type="text" name="city">
+                </label>
+                <label>State
+                    <select name="State">
+                        <option value="WA">Washington</option>
+                        <option value="TN">Tennessee</option>
+                    </select>
+                </label>
+                <label>Zip Code
+                    <input id="zip" name="zip" type="text" pattern="[0-9]*">
+                </label>
+                <div>First Time Adopter?
+                    <br>
+                    <input type="radio" name="Yes" value="Yes">Yes
+                    <input type="radio" name="No" value="No">No
+                    <br>
+                </div>
+                <label>Pickup Location
+                    <select name="Pickup Location">
+                        <option value="Queen Anne">Queen Anne</option>
+                        <option value="Ballard">Ballard</option>
+                    </select>
+                </label>
+                <div>
+                    <p>Dogs Adopted</p>
+                    <div class="dogs-adopted">
+                        <img src="images/tucker-good-589776-unsplash.jpg" alt="Lucas the dog looking up with is mouth open" width=48>
+                        <div>Lucas</div>
+                        <div>Cost to Adopt:$123.45</div>
+                    </div>
+                    <div class="dogs-adopted">
+                        <img src="images/duffy-brook-350225-unsplash.jpg" alt="Duffy the Dog relaxing outside" width=48>
+                        <div>Duffy</div>
+                        <div>Cost to Adopt:$123.45</div>
+                    </div>
+                    <div class="Total">
+                        <p>Total Adoption Cost</p>
+                        <div>$1234.56</div>
+                    </div>
+                </div>
+                <input type="submit" value="Submit" id="submit">
+            </form>
         </div>
 
         <footer>
