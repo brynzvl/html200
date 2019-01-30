@@ -8,12 +8,18 @@
 body {
     font-family: sans-serif;
 		font-size: 1rem;
-    text-align: left;
     line-height: 1.4rem;
     margin: 0 auto;
 		display: block;
 
 }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 
 h1,h2,h3,h4,{
 	font-family: "Neuton";
@@ -93,7 +99,7 @@ h3 {
 		display: block;
 		max-width: 300px;
 		padding: 8px 2rem;
-		margin: .5rem auto;
+		margin: 2rem auto;
 }
 
 
@@ -133,26 +139,16 @@ h3 {
     object-fit: cover;
     overflow: hidden;
 }
-@media screen and (max-width: 992px) {
+
 .profiles{
-    background-color: blue;
-  }
-}
-.profiles{
-    display: grid;
-    height: auto;
-    min-height: 400px;
-    grid-template-columns: 2fr 2fr 2fr 2fr;
+		display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 1rem;
+		padding: 32px 0;
+
 }
 
-.dog-profile{
-	display: block;
-	margin-block-start: 1em;
-	margin-block-end: 1em;
-	margin-inline-start: 0px;
-	margin-inline-end: 0px;
-}
+
 .dog-profile img {
     height: 100px;
     width: 100%;
@@ -163,6 +159,7 @@ h3 {
 .profile-info {
     padding: 8px;
 }
+
 
 #checkout-button{
 	background-color: #81b741;
@@ -186,14 +183,23 @@ h3 {
 }
 
 #adopt-intro {
+	display: grid;
+	grid-area: text;
+	grid-template-columns: 1fr 1fr;
+}
+
+#adopt-intro img {
 	display: block;
-	margin-block-start: 1em;
-	margin-block-end: 1em;
-	margin-inline-start: 0px;
-	margin-inline-end: 0px;
+}
+
+.intro-text {
+	display: inline-block;
+	grid-template-columns: 2fr 2fr 2fr 2fr;
+	grid-gap: 1rem;
 }
 
 footer{
+	padding-top: 48px;
 	height: 400px;
 	background-color: #0b3555;
 	background-size: cover;
@@ -201,4 +207,33 @@ footer{
 	text-decoration: none;
 	text-align: center;
 	font-size: 1rem;
+	display: block;
+}
+
+.footer-content {
+	max-width: 430px;
+	justify-content: center;
+	display: inline-block;
+
+
+
+}
+a{
+  color: white;
+	list-style-type: none;
+	text-decoration: none;
+
+
+}
+.main{
+	padding: 24px 0px;
+}
+.footer-content ul {
+	padding: 16px;
+	list-style-type: none;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	margin: 0;
+	align-items: center;
 }
