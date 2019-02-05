@@ -1,101 +1,106 @@
 <!DOCTYPE html>
-<html lang="zxx" dir="ltr">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <title>Contact</title>
+    <link href="styles/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Neuton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
 </head>
 
 <body>
     <section id="header">
-        <img src="images/christopher-harris-57366-unsplash.jpg" alt="Close Up of a Dog's Face" width=1000>
-        <h1><img alt="Adopt A Dog Logo" src="adoptadog-logo.svg" width=200></h1>
-        <p>Seattle's premiere dog adoption agency.</p>
-        <div>
-            <img alt="Cart Icon" src="cart-icon.svg" width=24>
-            <p>$1234.56</p>
-            <div id="checkout-button">Checkout</div>
+        <div class="wrapper">
+            <div class="logo">
+                <h1><img alt="Adopt A Dog Logo" src="adoptadog-logo.svg" width=400></h1>
+                <p class="tagline">Seattle's premiere dog adoption agency.</p>
+            </div>
+            <div class="cart">
+                <div><img class="cart-icon" alt="Cart Icon" src="cart-icon.svg" width=24> $1234.56</div>
+                <div id="checkout-button">Checkout</div>
+            </div>
         </div>
-        <nav>
-            <ul>
-                <li><a href=index.html>Home</a></li>
-                <li><a href="dogs.html">Dogs</a></li>
-                <li><a href="blog.html">Blog</a></li>
-            </ul>
-        </nav>
     </section>
+    <nav class="main-nav">
+        <ul class="wrapper">
+            <li><a href=index.html>Home</a></li>
+            <li><a href="dogs.html">Dogs</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
     <main>
-        <h2>Checkout</h2>
-        <div class="form">
-            <form action="/action.php" method="GET">
-                <label>First Name
-                    <input type="text" name="first-name">
-                </label>
-                <br>
-                <label>Email Address
-                    <input type="email" name="user-email">
-                </label>
-                <br>
-                <label>Street Address
-                    <input type="text" name="address">
-                </label>
-                <br>
-                <label>City
-                    <input type="text" name="city">
-                </label>
-                <label>State
+        <div class="wrapper">
+            <h2>Checkout</h2>
+            <div class="form">
+                <form action="/action.php" method="GET">
+                    <label>First Name
+                        <input type="text" name="first-name">
+                    </label>
+                    <label>Email Address
+                        <input type="email" name="user-email">
+                    </label>
+                    <label>Street Address
+                        <input type="text" name="address">
+                    </label>
+                    <label>City
+                        <input type="text" name="city">
+                    </label>
+                    <label>State</label>
                     <select name="State">
                         <option value="WA">Washington</option>
                         <option value="TN">Tennessee</option>
                     </select>
-                </label>
-                <label>Zip Code
+                    <label>Zip Code</label>
                     <input id="zip" name="zip" type="text" pattern="[0-9]*">
-                </label>
-                <div>First Time Adopter?
-                    <br>
-                    <input type="radio" name="Yes" value="Yes">Yes
-                    <input type="radio" name="No" value="No">No
-                    <br>
-                </div>
-                <label>Pickup Location
-                    <select name="Pickup Location">
-                        <option value="Queen Anne">Queen Anne</option>
-                        <option value="Ballard">Ballard</option>
-                    </select>
-                </label>
-                <div>
-                    <p>Dogs Adopted</p>
-                    <div class="dogs-adopted">
-                        <img src="images/tucker-good-589776-unsplash.jpg" alt="Lucas the dog looking up with is mouth open" width=48>
-                        <div>Lucas</div>
-                        <div>Cost to Adopt:$123.45</div>
+                    <div>First Time Adopter?
+                        <br>
+                        <input type="radio" name="Yes" value="Yes">Yes
+                        <input type="radio" name="No" value="No">No
+                        <br>
                     </div>
-                    <div class="dogs-adopted">
-                        <img src="images/duffy-brook-350225-unsplash.jpg" alt="Duffy the Dog relaxing outside" width=48>
-                        <div>Duffy</div>
-                        <div>Cost to Adopt:$123.45</div>
+                    <label>Pickup Location
+                        <select name="Pickup Location">
+                            <option value="Queen Anne">Queen Anne</option>
+                            <option value="Ballard">Ballard</option>
+                        </select>
+                    </label>
+                    <div>
+                        <p>Dogs Adopted</p>
+                        <div class="dogs-adopted">
+                            <img src="images/tucker-good-589776-unsplash.jpg" alt="Lucas the dog looking up with is mouth open" width=80>
+                            <div>Lucas</div>
+                            <div>Cost to Adopt:$123.45</div>
+                        </div>
+                        <div class="dogs-adopted">
+                            <img src="images/duffy-brook-350225-unsplash.jpg" alt="Duffy the Dog relaxing outside" width=80>
+                            <div>Duffy</div>
+                            <div>Cost to Adopt:$123.45</div>
+                        </div>
+                        <div class="Total">
+                            <p>Total Adoption Cost</p>
+                            <div>$1234.56</div>
+                        </div>
                     </div>
-                    <div class="Total">
-                        <p>Total Adoption Cost</p>
-                        <div>$1234.56</div>
-                    </div>
-                </div>
-                <input type="submit" value="Submit" id="submit">
-            </form>
+                    <input type="submit" value="Submit" id="submit">
+                </form>
+            </div>
         </div>
-
-        <footer>
-            <img alt="Adopt A Dog Logo" src="adoptadog-logo.svg" width=200>
-            <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</p>
-            <ul>
-                <li><a href=index.html>Home</a></li>
-                <li><a href="dogs.html">Dogs</a></li>
-                <li><a href="blog.html">Blog</a></li>
-            </ul>
-            <p>© 2018 Adoptadog, LLC | Seattle, WA</p>
-        </footer>
     </main>
+    <footer>
+        <div class="wrapper">
+            <div class="footer-content">
+                <img alt="Adopt A Dog Logo" src="adoptadog-logo.svg" width=200>
+                <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</p>
+                <ul>
+                    <li><a href=index.html>Home</a></li>
+                    <li><a href="dogs.html">Dogs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <p>© 2018 Adoptadog, LLC | Seattle, WA</p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

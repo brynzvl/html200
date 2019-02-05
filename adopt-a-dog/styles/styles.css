@@ -1,10 +1,10 @@
 * {
 	box-sizing: border-box;
 	margin: 0;
-	font-family: sans-serif, Arial, Helvetica;
+	font-family: "Work Sans", sans-serif;
 }
 body {
-	font-family: sans-serif;
+	font-family: "Work Sans", sans-serif;
 	font-size: 1rem;
 	line-height: 1.4rem;
 	margin: 0 auto;
@@ -151,10 +151,10 @@ h3 {
 	background-size: cover;
 	display: block;
 }
-#adopt-intro {
+.adopt-intro {
 	display: inline-block;
 }
-#adopt-intro img {
+.adopt-intro img {
 	display: block;
 	float: left;
 	width: 400px;
@@ -207,4 +207,62 @@ li a {
 }
 .logo{
 	display: inline-block;
+}
+
+.article-intro{
+padding:  1rem;
+}
+
+.article-intro img {
+	display: block;
+	float: left;
+	width: 400px;
+	overflow: hidden;
+}
+
+.adopt-intro {
+	display: inline-block;
+}
+
+.form {
+  padding: 32px;
+  display: block;
+  margin: auto;
+  width: 768px;
+
+}
+
+#submit {
+	background-color: #81b741;
+	font-family: sans-serif;
+	border: none;
+	border-radius: 2px;
+	color: white;
+	font-weight: bold;
+	padding: .5rem 4rem;
+	text-decoration: none;
+	text-align: center;
+	font-size: 1rem;
+	cursor: pointer;
+	margin: 1rem 0;
+}
+
+button, input[type=text], input[type=email],  input[type=phone], input[type=date], select, textarea {
+    padding: 4px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: inherit;
+    margin: 8px 0px;
+    box-sizing: border-box;
+    outline: none;
+    line-height: 1rem;
+    width: 100%;
+}
+
+label {
+  font-weight: 500;
+  font-size: 1.25rem;
 }
