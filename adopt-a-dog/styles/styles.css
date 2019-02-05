@@ -161,8 +161,9 @@ h3 {
 	overflow: hidden;
 }
 .intro-text {
-	display: block;
+	display: inline-block;
 	height:170px;
+	width: 60%;
 	margin-right:2rem;
 	margin-top: 2rem
 }
@@ -218,6 +219,7 @@ padding:  1rem;
 	float: left;
 	width: 400px;
 	overflow: hidden;
+	padding: 1rem;
 }
 
 .adopt-intro {
