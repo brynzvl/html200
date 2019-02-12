@@ -40,12 +40,14 @@ h3 {
 	color: #0b3555;
 }
 .wrapper {
-	width: 1000px;
+	max-width: 1024px;
+	width:100%;
 	margin: auto;
 }
 .dog-profile {
-	width: 200px;
-	margin: 16px;
+	width: 20%;
+  min-width: 14rem;
+	margin-bottom: 2rem;
 	overflow: hidden;
 	box-shadow: 0 3px 6px 0 #c8c8c8;
 	border-radius: 2px;
@@ -117,13 +119,14 @@ h3 {
 	padding: 0 2rem;
 }
 .profiles{
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-gap: 1rem;
-	padding: 1rem 0;
+	width: 100%;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+	padding-top: 2rem;
 }
 .dog-profile img {
-	height: 100px;
+	height: 150px;
 	width: 100%;
 	object-fit: cover;
 	overflow: hidden;
@@ -152,23 +155,27 @@ h3 {
 	display: block;
 }
 .adopt-intro {
-	display: inline-block;
+	width: 100%;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
 }
 .adopt-intro img {
-	display: block;
-	float: left;
-	width: 400px;
+	min-width: 20rem;
+	height: auto;
+	width: 35%;
 	overflow: hidden;
 }
 .intro-text {
 	display: inline-block;
-	height:170px;
-	width: 60%;
-	margin-right:2rem;
-	margin-top: 2rem
+	height: auto;
+	max-width: 50%;
+	margin-left:2rem;
+	margin-bottom: 2rem
+	padding: 0, 0, 4rem, 0;
 }
 .intro-text p {
-	display: block;
+	flex-wrap: wrap;
 	margin-top: 1rem;
 }
 footer{
