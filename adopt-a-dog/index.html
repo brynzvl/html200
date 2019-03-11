@@ -5,14 +5,23 @@
     <meta charset="utf-8">
     <title>Adopt-a-Dog</title>
     <link href="styles/styles.css" rel="stylesheet">
+    <link href="styles/blog.css" rel="stylesheet">
+    <link href="styles/media-queries.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Neuton" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="scripts/scripts.js"></script>
 </head>
 
 <body>
     <section id="header">
-        <div class="wrapper">
+        <div class="image-container"></div>
+          <!-- <img srcset="/images/header-small.jpg 500w,
+                       images/header-medium.jpg 1000w,
+                       images/header-large.jpg 2000w"
+                sizes="(max-width: 350px) 300px, 100vw"
+                src="images/header-medium.jpg"> -->
+          <div class="wrapper">
             <div class="logo">
                 <h1><img alt="Adopt A Dog Logo" src="adoptadog-logo.svg" width=400></h1>
                 <p class="tagline">Seattle's premiere dog adoption agency.</p>
@@ -21,9 +30,9 @@
                 <div><img class="cart-icon" alt="Cart Icon" src="cart-icon.svg" width=24> $1234.56</div>
                 <div id="checkout-button">Checkout</div>
             </div>
-        </div>
+          </div>
     </section>
-    <nav class="main-nav">
+    <nav class="main-nav" id="block-nav">
         <ul class="wrapper">
             <li><a href=index.html>Home</a></li>
             <li><a href="dogs.html">Dogs</a></li>
@@ -37,7 +46,7 @@
                     <img src="images/eric-ward-610868-unsplash.jpg" alt="Boy Hugging Happy Dog">
                     <section class="intro-text">
                         <h2>Adopt A Dog</h2>
-                        <p>Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat ad magnienecto volorent fugia nonsedi gendand itatquos as magnimpor aut molor autatia ad est officimus accae et omnia cus, od qui ate</p>
+                        <p>Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat ad magnienecto volorent fugia nonsedi gendand itatquos as magnimpor aut molor autatia ad est officimus accae et omnia cus, od qui ate</\p>
                     </section>
                 </div>
                 <section class="profiles">
@@ -109,20 +118,20 @@
                 <article class="blog-snippet">
                     <img src="images/patrick-hendry-221863-unsplash.jpg" alt="Boy Hugging Happy Dog">
                     <h3>Traveling With Your Dog</h3>
-                    <div>Iciustiam, et ad quiaes cum que excea sinciendi qui offic temquas doluptios dolupta tiandebis nem ut.</div>
-                    <div class="read-more">Read more>></div>
+                    <div><p>Iciustiam, et ad quiaes cum que excea sinciendi qui offic temquas doluptios dolupta nem ut.</p></div>
+                    <div class="read-more"><p>Read more>></p></div>
                 </article>
                 <article class="blog-snippet">
                     <img src="images/matt-nelson-259365-unsplash.jpg" alt="Boy Hugging Happy Dog">
                     <h3>How To Walk Multiple Dogs</h3>
-                    <div>Iciustiam, et ad quiaes cum que excea sinciendi qui offic temquas doluptios dolupta tiandebis nem ut.</div>
-                    <div class="read-more">Read more>></div>
+                    <div><p>Iciustiam, et ad quiaes cum que excea sinciendi qui offic temquas doluptios dolupta nem ut.</p></div>
+                    <div class="read-more"><p>Read more>></p></div>
                 </article>
                 <article class="blog-snippet">
                     <img src="images/wyatt-ryan-367017-unsplash.jpg" alt="Boy Hugging Happy Dog">
                     <h3>Teach Your Dog To Fetch!</h3>
-                    <div>Iciustiam, et ad quiaes cum que excea sinciendi qui offic temquas doluptios dolupta tiandebis nem ut.</div>
-                    <div class="read-more">Read more>></div>
+                    <div><p>Iciustiam, et ad quiaes cum que excea sinciendi qui offic temquas doluptios dolupta nem ut.</p></div>
+                    <div class="read-more"><p>Read more>></p></div>
                 </article>
             </div>
         </div>

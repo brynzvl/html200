@@ -1,0 +1,65 @@
+
+@media (max-width: 900px) {
+
+  .right {
+    display: none;
+  }
+	.dog-profile {
+		width: calc(30% - 20px);
+		margin: 1rem;
+	}
+
+	.dog-page-profile {
+		width: calc(30% - 20px);
+		margin: 1rem;
+	}
+
+}
+
+@media (max-width: 768px) {
+
+	.dog-profile {
+		width: calc(48% - 20px);
+		margin: 1rem;
+	}
+
+	.dog-page-profile {
+		width: calc(40% - 20px);
+		margin: 1rem;
+	}
+
+}
+
+@media (max-width: 450px) {
+
+	.dog-profile {
+		width: 100%;
+	}
+
+	.dog-page-profile {
+		width: 100%;
+	}
+
+  /* .logo {
+    max-width: 1
+  } */
+  .wrapper {
+
+     padding-top: 1rem;
+ 		 padding-right: 1rem;
+ 		 padding-left: 1rem;
+ }
+ #header .wrapper {
+    flex-direction: column;
+}
+
+ #header {
+   height: auto;
+   background-image: url('../images/hero.jpg');
+ }
+ .cart {
+     float: none;
+     display: block;
+     color: white;
+ }
+}
