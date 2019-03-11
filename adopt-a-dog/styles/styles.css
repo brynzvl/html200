@@ -161,9 +161,8 @@ p {
      margin: 2rem auto;
 }
  .cart{
-     float:right;
-     display: block;
-     color: white;
+	 color: white;
+	 padding: 0 0 0 2rem;
 }
  .cart-icon{
      display: inline-block;
