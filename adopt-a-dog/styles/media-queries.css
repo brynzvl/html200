@@ -1,5 +1,5 @@
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
 
   .right {
     display: none;
@@ -39,10 +39,6 @@
 	.dog-page-profile {
 		width: 100%;
 	}
-
-  /* .logo {
-    max-width: 1
-  } */
   .wrapper {
 
      padding-top: 1rem;
@@ -55,11 +51,16 @@
 
  #header {
    height: auto;
-   background-image: url('../images/hero.jpg');
+   /* background-image: url('../images/hero.jpg'); */
  }
+
+
  .cart {
      float: none;
      display: block;
      color: white;
+ }
+ .logo img {
+   max-width: 100%;
  }
 }

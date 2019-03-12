@@ -5,6 +5,8 @@
 	flex-direction: column;
 	margin: auto;
 	padding-top: 2rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 .blog-snippet {

@@ -10,20 +10,26 @@
     <link href="https://fonts.googleapis.com/css?family=Neuton" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width">
     <script src="scripts/scripts.js"></script>
 </head>
 
 <body>
     <section id="header">
-        <div class="image-container"></div>
-        <!-- <img srcset="/images/header-small.jpg 500w,
-                       images/header-medium.jpg 1000w,
-                       images/header-large.jpg 2000w"
-                sizes="(max-width: 350px) 300px, 100vw"
-                src="images/header-medium.jpg"> -->
+      <div class="image-container">
+      <img id="hero" alt="Elva dressed as a fairy"
+      src="images/header-small.jpg"
+      srcset="images/header-small.jpg 500w,
+              images/header-medium.jpg 1000w,
+              images/header-large.jpg 2000w"
+           sizes="(max-width: 500px) 500px,
+                  (max-width: 1000px) 1000px,
+                  (max-width: 2000px) 2000px,
+                  100vw">
+      </div>
         <div class="wrapper">
             <div class="logo">
-                <h1><img alt="Adopt A Dog Logo" src="adoptadog-logo.svg" width=400></h1>
+                <h1><img alt="Adopt A Dog Logo" src="adoptadog-logo.svg"></h1>
                 <p class="tagline">Seattle's premiere dog adoption agency.</p>
             </div>
             <div class="cart">
