@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="scripts/scripts.js"></script>
-    <script src="scripts/form.js"></script>
+
 </head>
 
 <body>
@@ -41,14 +41,17 @@
           <section class="form">
             <h2>Checkout</h2>
             <div class="form">
-                <form action="/action.php" method="GET">
+                <form method="POST" id="form">
                     <label>First Name
-                        <input type="text" name="first-name">
+                        <input type="text" name="FirstName">
+                    </label>
+                    <label>Last Name
+                        <input type="text" name="LastName">
                     </label>
                     <label>Email Address
-                        <input type="email" name="user-email">
+                        <input type="email" name="Email">
                     </label>
-                    <label>Street Address
+                    <!-- <label>Street Address
                         <input type="text" name="address">
                     </label>
                     <label>City
@@ -72,11 +75,11 @@
                             <option value="Queen Anne">Queen Anne</option>
                             <option value="Ballard">Ballard</option>
                         </select>
-                    </label>
+                    </label> -->
                     <label>Comments
-                        <input type="text" name="comments">
+                        <input type="text" name="Comments">
                     </label>
-                    <div>
+                    <!-- <div>
                         <p>Dogs Adopted</p>
                         <div class="dogs-adopted">
                             <img src="images/tucker-good-589776-unsplash.jpg" alt="Lucas the dog looking up with is mouth open" width=80>
@@ -92,7 +95,7 @@
                             <p>Total Adoption Cost</p>
                             <div>$1234.56</div>
                         </div>
-                    </div>
+                    </div> -->
                     <input type="submit" value="Submit" id="submit">
                 </form>
             </div>
@@ -113,6 +116,7 @@
             </div>
         </div>
     </footer>
+    <script src="scripts/form.js"></script>
 </body>
 
 </html>
