@@ -371,3 +371,7 @@ p {
 .dog-profile-red {
   border: 1px solid red !important;
 }
+
+.button-blue {
+    background-color: #2c9ab7 !important;
+  }
