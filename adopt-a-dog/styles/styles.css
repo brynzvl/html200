@@ -364,6 +364,10 @@ p {
          padding-top: 1rem;
 }
 
-.invalid{
+.invalid {
+  border: 1px solid red !important;
+}
+
+.dog-profile-red {
   border: 1px solid red !important;
 }

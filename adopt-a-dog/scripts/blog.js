@@ -20,10 +20,13 @@ const content =
 	}
 ];
 
-let blogPosts = document.getElementsByClassName('adopt-intro');
-for(let i=0; i<blogPosts.length ; i++){
-	blogPosts[i].getElementsByTagName('h3')[0].innerHTML = content[i].headline;
-	blogPosts[i].getElementsByTagName('img')[0].src = content[i].image;
-	blogPosts[i].getElementsByTagName('img')[0].alt = content[i].alt;
-	blogPosts[i].getElementsByTagName('div')[0].innerHTML = content[i].body;
-}
+const blog-wrapper = document.querySelector('.blog-wrapper')
+
+console.log();
+// let blogPosts = document.getElementsByClassName('adopt-intro');
+// for(let i=0; i<blogPosts.length ; i++){
+// 	blogPosts[i].getElementsByTagName('h3')[0].innerHTML = content[i].headline;
+// 	blogPosts[i].getElementsByTagName('img')[0].src = content[i].image;
+// 	blogPosts[i].getElementsByTagName('img')[0].alt = content[i].alt;
+// 	blogPosts[i].getElementsByTagName('div')[0].innerHTML = content[i].body;
+// }
